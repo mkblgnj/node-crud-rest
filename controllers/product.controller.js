@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 exports.welcome = function(req,res) {
     var endpoints = {
-        BaseURL: "localhost:1234/products",
+        BaseURL: "https://node-crud-restapi.herokuapp.com/products",
         Create : {Method: "POST", Endpoint: "/create" },
         Read   : {Method: "GET",Endpoint:"/:id"},
         Update : {Method: "PUT", Endpoint:"/:id/update"},
